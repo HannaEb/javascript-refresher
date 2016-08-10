@@ -73,7 +73,7 @@ var sumNumbers = function(array) {
 };
 
 var repeatElements = function(array) {
-  return 'Write your method here';
+
 };
 
 var stringToNumber = function(string) {
@@ -81,7 +81,8 @@ var stringToNumber = function(string) {
 };
 
 var calculateAverage = function(array) {
-  return 'Write your method here';
+
+
 };
 
 var getElementsUntilGreaterThanFive = function(array) {
@@ -109,7 +110,7 @@ var removeCapitals = function(string) {
 };
 
 var roundUp = function(number) {
-  return 'Write your method here';
+  return Math.ceil(number);
 };
 
 var formatDateNicely = function(date) {
@@ -117,7 +118,7 @@ var formatDateNicely = function(date) {
 };
 
 var getDomainName = function(string) {
-  return 'Write your method here';
+  return string.hostname;
 };
 
 var titleize = function(string) {
@@ -129,11 +130,14 @@ var checkForSpecialCharacters = function(string) {
 };
 
 var squareRoot = function(number) {
-  return 'Write your method here';
+  return Math.sqrt(number);
 };
 
 var factorial = function(number) {
-  return 'Write your method here';
+  var value = 1;
+  for (var i = 2; i <= number; i++)
+       value = value * i;
+  return value;
 };
 
 var findAnagrams = function(string) {
