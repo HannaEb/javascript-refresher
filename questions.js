@@ -145,7 +145,8 @@ var findAnagrams = function(string) {
 };
 
 var convertToCelsius = function(number) {
-  return 'Write your method here';
+  var n =  (5/9) * (number-32);
+  return Math.ceil(n);
 };
 
 var letterPosition = function(array) {
