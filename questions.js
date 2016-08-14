@@ -107,8 +107,6 @@ var swapKeysAndValues = function(object) {
   return new_object;
 };
 
-
-
 var sumKeysAndValues = function(object) {
   return 'Write your method here';
 };
@@ -134,7 +132,13 @@ var titleize = function(string) {
 };
 
 var checkForSpecialCharacters = function(string) {
-  return 'Write your method here';
+  var specialChars = "~`!#$%^&@*+=-[]\\\';,/{}|\":<>?";
+  for (var i = 0; i < string.length; i++) {
+    if (specialChars.indexOf(string.charAt(i)) != -1) {
+      return true;
+    }
+  }
+  return false;
 };
 
 var squareRoot = function(number) {
