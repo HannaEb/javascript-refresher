@@ -98,8 +98,16 @@ var getAllLetters = function(array) {
 };
 
 var swapKeysAndValues = function(object) {
-  return 'Write your method here';
+  var new_object = {};
+  for (var prop in object) {
+    if(object.hasOwnProperty(prop)) {
+      new_object[object[prop]] = prop;
+    }
+  }
+  return new_object;
 };
+
+
 
 var sumKeysAndValues = function(object) {
   return 'Write your method here';
