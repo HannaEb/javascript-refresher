@@ -120,11 +120,17 @@ var roundUp = function(number) {
 };
 
 var formatDateNicely = function(date) {
-  return 'Write your method here';
+  function pad(s) {
+    return (s < 10) ? '0' + s : s;
+  }
+  var new_date = new Date(date);
+  return [pad(new_date.getDate()), pad(new_date.getMonth()+1), new_date.getFullYear()].join('/');
 };
 
+
 var getDomainName = function(string) {
-  return string.hostname;
+  var domain = string.replace(/.*@/, "");
+  return domain;
 };
 
 var titleize = function(string) {
