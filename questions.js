@@ -81,9 +81,14 @@ var stringToNumber = function(string) {
 };
 
 var calculateAverage = function(array) {
-
-
+  var sum = 0;
+  for (var i = 0; i < array.length; i++) {
+    sum += parseInt(array[i], 10);
+  }
+  var average = sum/array.length;
+  return average;
 };
+
 
 var getElementsUntilGreaterThanFive = function(array) {
   return 'Write your method here';
