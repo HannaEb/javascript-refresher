@@ -43,7 +43,8 @@ var sortByLastLetter = function(array) {
 };
 
 var getFirstHalf = function(string) {
-  return 'Write your method here';
+  half = Math.ceil(string.length / 2);
+  return string.substring(0, half);
 };
 
 var makeNegative = function(number) {
