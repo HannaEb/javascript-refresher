@@ -74,7 +74,10 @@ var sumNumbers = function(array) {
 };
 
 var repeatElements = function(array) {
-
+  var result = [];
+  for  (var i = 0; i < 2; i++)
+    result.push(array);
+  return Array.prototype.concat.apply([], result);
 };
 
 var stringToNumber = function(string) {
