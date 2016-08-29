@@ -52,7 +52,10 @@ var makeNegative = function(number) {
 };
 
 var numberOfPalindromes = function(array) {
-  return 'Write your method here';
+  return array.reduce(function(total, word) {
+    var wordReversed = word.split("").reverse().join("");
+    return word === wordReversed ? total+1 : total;
+  }, 0);
 };
 
 var shortestWord = function(array) {
