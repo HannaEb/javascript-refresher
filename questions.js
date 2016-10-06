@@ -116,7 +116,13 @@ var calculateAverage = function(array) {
 
 
 var getElementsUntilGreaterThanFive = function(array) {
-  return 'Write your method here';
+  var i = 0;
+  var newArray = [];
+  while(array[i] <= 5){
+    newArray.push(array[i]);
+    i++;
+  }
+  return newArray;
 };
 
 var convertArrayToObject = function(array) {
