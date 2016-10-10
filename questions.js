@@ -114,7 +114,6 @@ var calculateAverage = function(array) {
   return average;
 };
 
-
 var getElementsUntilGreaterThanFive = function(array) {
   var i = 0;
   var newArray = [];
@@ -126,7 +125,13 @@ var getElementsUntilGreaterThanFive = function(array) {
 };
 
 var convertArrayToObject = function(array) {
-  return 'Write your method here';
+  var obj = {};
+  array.forEach(function(currentValue, index, array){
+    if(index % 2 === 0){
+      obj[currentValue] = array[index + 1];
+    }
+  });
+  return obj;
 };
 
 var getAllLetters = function(array) {
