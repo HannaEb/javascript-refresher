@@ -135,7 +135,12 @@ var convertArrayToObject = function(array) {
 };
 
 var getAllLetters = function(array) {
-  return 'Write your method here';
+  return array.join('').split('').reduce(function(pv,cv){
+    if(pv.indexOf(cv) < 0){
+      pv.push(cv);
+    }
+    return pv;
+  },[]).sort();
 };
 
 var swapKeysAndValues = function(object) {
