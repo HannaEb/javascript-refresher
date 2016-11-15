@@ -158,7 +158,13 @@ var sumKeysAndValues = function(object) {
 };
 
 var removeCapitals = function(string) {
-  return 'Write your method here';
+  var newString = "";
+  for (var i = 0; i < string.length; i++) {
+    if(string.charAt(i) === " " || string.charAt(i) !== string.charAt(i).toUpperCase()){
+      newString+= string.charAt(i);
+    }
+  }
+  return newString;
 };
 
 var roundUp = function(number) {
