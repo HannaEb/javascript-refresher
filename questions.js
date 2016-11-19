@@ -181,8 +181,7 @@ var formatDateNicely = function(date) {
 
 
 var getDomainName = function(string) {
-  var domain = string.replace(/.*@/, "");
-  return domain;
+  return string.substring((string.lastIndexOf("@")+1),(string.lastIndexOf(".com")));
 };
 
 var titleize = function(string) {
