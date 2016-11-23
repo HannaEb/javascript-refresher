@@ -36,13 +36,11 @@ var everyPossiblePair = function(array) {
     .forEach(function (first, n) {
       var tail = sorted.slice(n + 1, sorted.length);
       tail.forEach(function (item) {
-        pairs.push([item, first]);
+        pairs.push([first, item]);
       });
     });
   return pairs.sort();
 };
-
-
 
 var allElementsExceptFirstThree = function(array) {
   return array.slice(3);
